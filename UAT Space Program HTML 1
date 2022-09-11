@@ -26,47 +26,48 @@
 
                 <script>
                     // Variable Definition
-                    var countdown = 10;
+                    var currTime = 10;
                     // HTML Element
-                    document.getElementById("DisplayCountdown").innerHTML = countdown;
+                    document.getElementById("DisplayCountdown").innerHTML = currTime;
                     // Decrement by one
-                    countdown--;
+                    currTime--;
 
-                    document.getElementById("DisplayCountdown").innerHTML = countdown;
+                    document.getElementById("DisplayCountdown").innerHTML = currTime;
+                    
+                    currTime--;
 
-                    countdown--;
+                    document.getElementById("DisplayCountdown").innerHTML = currTime;
+                    
+                    currTime--;
 
-                    document.getElementById("DisplayCountdown").innerHTML = countdown;
+                    document.getElementById("DisplayCountdown").innerHTML = currTime;
+                    
+                    currTime--;
 
-                    countdown--;
+                    document.getElementById("DisplayCountdown").innerHTML = currTime;
+                    
+                    currTime--;
 
-                    document.getElementById("DisplayCountdown").innerHTML = countdown;
+                    document.getElementById("DisplayCountdown").innerHTML = currTime;
+                    
+                    currTime--;
 
-                    countdown--;
+                    document.getElementById("DisplayCountdown").innerHTML = currTime;
+                    
+                    currTime--;
 
-                    document.getElementById("DisplayCountdown").innerHTML = countdown;
+                    document.getElementById("DisplayCountdown").innerHTML = currTime;
+                    
+                    currTime--;
 
-                    countdown--;
+                    document.getElementById("DisplayCountdown").innerHTML = currTime;
+                    
+                    currTime--;
 
-                    document.getElementById("DisplayCountdown").innerHTML = countdown;
+                    document.getElementById("DisplayCountdown").innerHTML = currTime;
+                    
+                    currTime--;
 
-                    countdown--;
-
-                    document.getElementById("DisplayCountdown").innerHTML = countdown;
-
-                    countdown--;
-
-                    document.getElementById("DisplayCountdown").innerHTML = countdown;
-
-                    countdown--;
-
-                    document.getElementById("DisplayCountdown").innerHTML = countdown;
-
-                    countdown--;
-
-                    document.getElementById("DisplayCountdown").innerHTML = countdown;
-
-                    countdown--;
                     // Print text for zero
                     document.getElementById("DisplayCountdown").innerHTML = "Blastoff!";
                 </script>
