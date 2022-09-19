@@ -1,4 +1,4 @@
-// Alert function
+// Alert function 
 function eggAlert(){
   // Alert message
     alert("This code is located in a separate js file.")
