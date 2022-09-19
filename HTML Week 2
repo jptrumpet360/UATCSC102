@@ -1,0 +1,84 @@
+<html>
+    <!-- Head Tag -->
+    <head>
+        <!-- Character set for this page  -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+        <script src="egg.js"></script>
+        <!-- Title display for header -->
+        <title>UAT Space Program</title>
+    </head>
+    <!-- Body Tag -->
+    <body>
+        <!-- Image Source -->
+        <img src="UATspaceLogo.jpg" />
+        <!-- First heading, colored Blue -->
+        <h1 style="color: blue;">UAT Space Program</h1>
+        <!-- Paragraph tags -->
+        <p>Test of the document write function</p>
+
+        <p>Test of the paragraph tags</p>
+        <!-- Buttons -->
+        <button id="Start" onclick="alert('Time to go to Space!');">Start</button> <button id="Start" onclick="alert('No Space?');">Stop</button>
+
+        <p>
+                <!-- Countdown Javascript ID -->
+                Countdown: <span id="DisplayCountdown"></span>
+
+                <script>
+                    //functions from .js file
+                    eggAlert();
+
+                    countofdown(document.getElementById("DisplayCountdown"));
+                    /*
+                    // Variable Definition
+                    var currTime = 10;
+                    // HTML Element
+                    document.getElementById("DisplayCountdown").innerHTML = currTime;
+                    // Decrement by one
+                    currTime--;
+
+                    document.getElementById("DisplayCountdown").innerHTML = currTime;
+                    
+                    currTime--;
+
+                    document.getElementById("DisplayCountdown").innerHTML = currTime;
+                    
+                    currTime--;
+
+                    document.getElementById("DisplayCountdown").innerHTML = currTime;
+                    
+                    currTime--;
+
+                    document.getElementById("DisplayCountdown").innerHTML = currTime;
+                    
+                    currTime--;
+
+                    document.getElementById("DisplayCountdown").innerHTML = currTime;
+                    
+                    currTime--;
+
+                    document.getElementById("DisplayCountdown").innerHTML = currTime;
+                    
+                    currTime--;
+
+                    document.getElementById("DisplayCountdown").innerHTML = currTime;
+                    
+                    currTime--;
+
+                    document.getElementById("DisplayCountdown").innerHTML = currTime;
+                    
+                    currTime--;
+
+                    document.getElementById("DisplayCountdown").innerHTML = currTime;
+                    
+                    currTime--;
+                    */
+                    // Print text for zero
+                    //document.getElementById("DisplayCountdown").innerHTML = "Blastoff!";
+                    
+                </script>
+        </p>
+    </body>
+    <!-- Closing -->
+</html>
