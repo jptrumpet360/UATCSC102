@@ -1,0 +1,69 @@
+<html>
+    <!-- James Patton Week 3 -->
+    <!-- Head Tag -->
+    <head>
+        <!-- Character set for this page  -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+        <script src="week3.js"></script>
+        <!-- Title display for header -->
+        <title>UAT Space Program</title>
+    </head>
+    <!-- Body Tag -->
+    <body>
+        <!-- Image Source -->
+        <img src="UATspaceLogo.jpg" />
+        <!-- First heading, colored Blue -->
+        <h1 style="color: blue;">UAT Space Program</h1>
+        <!-- Paragraph tags -->
+        <p>Test of the document write function</p>
+
+        <p>Test of the paragraph tags</p>
+        <!-- Buttons -->
+        <button id="Start" onclick="alert('Time to go to Space!');">Start</button> <button id="Start" onclick="alert('No Space?');">Stop</button>
+
+        <p>
+                <!-- Countdown Javascript ID -->
+                Countdown: <span id="DisplayCountdown"></span>
+
+                <script>
+                    //functions from .js file
+                    eggAlert();
+                    // First name variable definition
+                    firstName = ""
+                    // First Name While loop
+                    while(firstName.length < 3) {
+                    // Prompt for First Name
+                     firstName = prompt("First Name");
+                    }
+
+                    lastName = ""
+
+                    while(lastName.length < 3) {
+                     lastName = prompt("Last Name");
+                    }
+                    // if statement regarding name length exceeding 20 chars
+                    if(firstName.length + lastName.length > 20) {
+                        firstName = prompt("First Name")
+                        lastName = prompt("Last Name")
+                    }
+                    // badge number definition
+                    badgeNumber = 42069
+                    // While loop establishing maximum
+                    while(badgeNumber > 1000) {
+                        badgeNumber = prompt("Badge Number")
+                    }
+                    // While loop establishing minimum
+                    while(badgeNumber < 1) {
+                        badgeNumber = prompt("Badge Number")
+                    }
+                    // Countdown function call
+                    countofdown(document.getElementById("DisplayCountdown"));
+                    
+                    
+                    
+                </script>
+        </p>
+    </body>
+    <!-- Closing -->
+</html>
