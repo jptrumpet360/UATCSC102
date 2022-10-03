@@ -1,0 +1,99 @@
+<html>
+    <!-- James Patton Week 4 -->
+    <!-- Head Tag -->
+    <head>
+        <!-- Character set for this page  -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+        <script src="week4.js"></script>
+        <!-- Title display for header -->
+        <title>UAT Space Program</title>
+    </head>
+    <!-- Body Tag -->
+    <body>
+        <!-- Image Source -->
+        <img src="UATspaceLogo.jpg" />
+        <!-- First heading, colored Blue -->
+        <h1 style="color: blue;">UAT Space Program</h1>
+        <!-- Paragraph tags -->
+        <p>Welcome to the Launch Pad</p>
+
+        <p>Enjoy the Space Force March, The Invincible Eagle, by John Philip Sousa</p>
+        <!-- Audio Element with controls  -->
+        <audio controls>
+            <!-- Audio Source -->
+            <source src="space force.mp3" type="audio/mpeg">
+            <!-- Text in case browser doesn't support audio -->
+          Your browser does not support the audio element.
+          </audio>
+          <br>
+          <br>
+        <!-- Buttons -->
+          
+        <!-- Start Button and function operations -->
+        <input type="button" id="startbtn" value="Start" onclick="clickStart()+alert('Time to go to Space!')">
+        <!-- Stop Button and function operations -->
+        <input type="button" id="stopbtn" value="Stop" onclick="clickStop()+alert('No Space?')" disabled = true>
+        <script>
+
+    
+            //Function for Start Button, enables Stop button and disables Start Button
+            function clickStart(){
+             document.getElementById("startbtn").disabled = true;
+             document.getElementById("stopbtn").disabled = false;
+             }
+            //Function for Stop Button, enables Start button and disables Stop Button
+            function clickStop(){
+                document.getElementById("startbtn").disabled = false;
+              document.getElementById("stopbtn").disabled = true;
+              }
+        </script>
+        <p>
+                <!-- Countdown Javascript ID -->
+                Countdown: <span id="DisplayCountdown"></span>
+
+                <script>
+                    //functions from .js file
+                    eggAlert();
+                    // First name variable definition
+                    firstName = ""
+                    // First Name While loop
+                    while(firstName.length < 3) {
+                    // Prompt for First Name
+                     firstName = prompt("First Name");
+                    }
+
+                    lastName = ""
+
+                    while(lastName.length < 3) {
+                     lastName = prompt("Last Name");
+                    }
+                    // if statement regarding name length exceeding 20 chars
+                    if(firstName.length + lastName.length > 20) {
+                        firstName = prompt("First Name")
+                        lastName = prompt("Last Name")
+                    }
+                    // badge number definition
+                    badgeNumber = 42069
+                    // While loop establishing maximum
+                    while(badgeNumber > 1000) {
+                        badgeNumber = prompt("Badge Number")
+                    }
+                    // While loop establishing minimum
+                    while(badgeNumber < 1) {
+                        badgeNumber = prompt("Badge Number")
+                    }
+                    // Countdown function call
+                    countofdown(document.getElementById("DisplayCountdown"));
+                    
+                    
+                    
+                </script>
+                <br>
+                <br>
+                <!-- Fun Fact!!!!!!!!!!! -->
+             <input type="button" id="funfact" value="Fun Fact" onclick="alert('Disregarding the violent effects of the vacuum of space, a squirrel would need to fall about 4800 miles in order to die. That would give it time to starve to death, since they can survive terminal velocity.')">   
+        </p>
+    </body>
+    <!-- Closing -->
+</html>
