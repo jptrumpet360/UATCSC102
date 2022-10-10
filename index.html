@@ -1,0 +1,108 @@
+<html>
+    <!-- James Patton Week 5 -->
+    <!-- Head Tag -->
+    <head>
+        <!-- Character set for this page  -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+        <script src="week5.js"></script>
+        <!-- Title display for header -->
+        <title>UAT Space Program</title>
+    </head>
+    <!-- Body Tag -->
+    <body style="background-color:deepskyblue ; color:black;">
+        <!-- Image Source -->
+        <img src="UATspaceLogo.jpg" />
+        <br>
+        <!-- Links to html pages -->
+        <a href="UATSpaceProgramWeek5.html">Home</a>&nbsp;&nbsp; <a href="index.html">Flight Data</a>
+        <!-- First heading, colored Blue -->
+        <h1 style="color: blue;">UAT Space Program</h1>
+        <!-- Second heading, colored midnight blue -->
+        <h2 style="color:midnightblue;">Spaceflight Data</h2>
+        <!-- Table and styling -->
+        <table style="border: 2px solid black; padding: 0px; border-spacing: 0px; background-color: aliceblue; width: 50%;">
+            <!-- Table Row tag -->
+            <tr>
+                <!-- Table row styling, bolded and padded for title emphasis -->
+                <td style="font-weight: bold; border: 1px solid black; padding: 20px;">Data Type</td>
+                <td style="font-weight: bold; border: 1px solid black; padding: 20px;">Reading</td>
+            </tr>
+            <tr>
+                <!-- Table row styling for data -->
+                <td style="font-weight: normal; border: 1px solid black; padding: 10px;">Burn Time</td>
+                <td style="font-weight: normal; border: 1px solid black; padding: 10px;">2h,53m</td>
+            
+            </tr>
+            <tr>
+                <td style="font-weight: normal; border: 1px solid black; padding: 10px;">Peak Velocity</td>
+                <td style="font-weight: normal; border: 1px solid black; padding: 10px;">36666.667 fps</td>
+            
+            </tr>
+            <tr>
+                <td style="font-weight: normal; border: 1px solid black; padding: 10px;">Reentry Velocity</td>
+                <td style="font-weight: normal; border: 1px solid black; padding: 10px;">24933.333 fps</td>
+            
+            </tr>
+            <tr>
+                <td style="font-weight: normal; border: 1px solid black; padding: 10px;">Apogee Altitude</td>
+                <td style="font-weight: normal; border: 1px solid black; padding: 10px;">900,000 Mi</td>
+            
+            </tr>
+            <tr>
+                <td style="font-weight: normal; border: 1px solid black; padding: 10px;">Celestial Bodies Orbited</td>
+                <td style="font-weight: normal; border: 1px solid black; padding: 10px;">2</td>
+            
+            </tr>
+            <tr>
+                <td style="font-weight: normal; border: 1px solid black; padding: 10px;">Aliens Hit</td>
+                <td style="font-weight: normal; border: 1px solid black; padding: 10px;">17</td>
+            
+            </tr>
+            <tr>
+                <td style="font-weight: normal; border: 1px solid black; padding: 10px;">Outside Air Temp</td>
+                <td style="font-weight: normal; border: 1px solid black; padding: 10px;">shorts weather</td>
+            
+            </tr>
+            <tr>
+                <td style="font-weight: normal; border: 1px solid black; padding: 10px;">Reentry Temp</td>
+                <td style="font-weight: normal; border: 1px solid black; padding: 10px;">0.94x Phoenix in July</td>
+            
+            </tr>
+        </table>
+        <br>
+        <br>
+         <!-- Buttons -->
+          
+        <!-- Start Button and function operations -->
+        <input type="button" id="startbtn" value="Start" onclick="clickStart()+alert('Time to go to Space!')">
+        <!-- Stop Button and function operations -->
+        <input type="button" id="stopbtn" value="Stop" onclick="clickStop()+alert('No Space?')" disabled = true>
+        <script>
+
+    
+            //Function for Start Button, enables Stop button and disables Start Button
+            function clickStart(){
+             document.getElementById("startbtn").disabled = true;
+             document.getElementById("stopbtn").disabled = false;
+             }
+            //Function for Stop Button, enables Start button and disables Stop Button
+            function clickStop(){
+                document.getElementById("startbtn").disabled = false;
+              document.getElementById("stopbtn").disabled = true;
+              }
+        </script>
+        <p>
+                <!-- Countdown Javascript ID -->
+                Countdown: <span id="DisplayCountdown"></span>
+
+                <script>
+                    //functions from .js file
+                    // Countdown function call
+                    countofdown(document.getElementById("DisplayCountdown"));  
+                </script>
+                <br>
+                <br>
+                <!-- Fun Fact!!!!!!!!!!! -->
+             <input type="button" id="funfact" value="Fun Fact" onclick="alert('Disregarding the violent effects of the vacuum of space, a squirrel would need to fall about 4800 miles in order to die. That would give it time to starve to death, since they can survive terminal velocity.')">   
+        </p>
